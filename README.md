@@ -5,6 +5,7 @@ Thank you for using the Key Terms Extractor. This script will read a file and re
 in given text. For this, the text will be normalized and preprocessed and finally a Tf-Idf score will be calculated
 for each word.
 As of now, the script only accepts xml files. Please edit the xml file to have following structure:
+```
 <data>
   <corpus>
     <content>
@@ -17,5 +18,6 @@ As of now, the script only accepts xml files. Please edit the xml file to have f
     </content>
   </corpus>
 </data>
+```
 
 You can use news.xml to test the functionality of the code. 
