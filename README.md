@@ -2,9 +2,10 @@
 The KeyTermsExtractor will give you the n-most relevant key terms with given text by calculating the inverse document frequency for every word in the text.
 
 Thank you for using the Key Terms Extractor. This script will read a file and return you the n-most relevant key terms
-in given text. For this, the text will be normalized and preprocessed and finally a Tf-Idf score will be calculated
+in given text and create a log file with the complete output. For this, the text will be normalized and preprocessed and finally a Tf-Idf score will be calculated
 for each word.
-As of now, the script only accepts xml files. Please edit the xml file to have following structure:
+The script will accept one xml or one or a series of txt files.
+If you want to use xml files, make sure you are using following format:
 ```
 <data>
   <corpus>
@@ -19,5 +20,16 @@ As of now, the script only accepts xml files. Please edit the xml file to have f
   </corpus>
 </data>
 ```
+And if your using txt files format, make sure you are using this format:
+```
+first_file.txt
+Line 1..........HEADER
+Line 2..........CONTENT
+Line 3..........CONTENT
+second_file.txt
+Line 1..........HEADER
+Line 2..........CONTENT
+Line 3..........CONTENT
+[...]
+```
 
-You can use news.xml to test the functionality of the code. 
